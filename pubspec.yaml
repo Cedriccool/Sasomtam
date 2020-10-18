@@ -29,6 +29,7 @@ dependencies:
   hexcolor: ^1.0.4
   geolocator: ^6.0.0
   http: ^0.12.0
+  social_login_2: ^0.0.3
   file_chooser:
     git:
       url: git://github.com/google/flutter-desktop-embedding.git

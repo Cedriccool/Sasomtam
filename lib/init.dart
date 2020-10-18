@@ -1,8 +1,4 @@
-import 'package:sasomtam/widgets/globals.dart' as globals;
 import 'package:sasomtam/widgets/settings.dart';
-import 'package:sasomtam/pages/chooseType.dart';
-import 'package:get/get.dart';
-import 'package:geolocator/geolocator.dart';
 
 class Init {
   static Future initialize() async {

@@ -5,6 +5,9 @@ String deviceID = '';
 String template = 'summer_love';
 String igUsername = 'Cedricazn';
 
+String email = "";
+String socialLogin = ""; // FB, EM, GG, TW
+
 String igFollowers = "";
 String likesFb = "";
 String lastFBLikes = "";

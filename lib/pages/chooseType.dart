@@ -36,7 +36,7 @@ If you want to contact us, please use this email: **shanuy.iot@gmail.com**
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Hexcolor("#FFFFFF"),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Sasomtam'),
       ),

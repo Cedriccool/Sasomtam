@@ -25,7 +25,7 @@ class Customer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Hexcolor("#FFFFFF"),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('Customer'),
       ),

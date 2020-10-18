@@ -15,6 +15,11 @@ class Settings {
       print("globals.type: " + globals.type.toString());
     });
 
+     await getString("email").then((value) {
+      globals.email = value;
+      print("globals.email: " + globals.email.toString());
+    });
+
     await getInt("rewardCounters").then((value) {
       globals.rewardCounters = value;
       print("globals.rewardCounters: " + globals.rewardCounters.toString());

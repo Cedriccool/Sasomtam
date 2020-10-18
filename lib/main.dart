@@ -6,6 +6,7 @@ import 'package:sasomtam/widgets/globals.dart' as globals;
 import 'package:sasomtam/pages/chooseType.dart';
 import 'package:sasomtam/pages/customer.dart';
 import 'package:sasomtam/pages/shop.dart';
+import 'package:sasomtam/pages/login.dart';
 //import 'package:file_chooser/file_chooser.dart';
 //import 'package:window_size/window_size.dart' as window_size;
 import 'dart:math' as math;
@@ -49,7 +50,7 @@ class InitializationApp extends StatelessWidget {
             print('done');
             print(globals.type);
 
-            return HomePage();
+            return Login();
 
             globals.type = 'shop'; // TEMP
 
