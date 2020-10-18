@@ -47,12 +47,16 @@ class InitializationApp extends StatelessWidget {
         future: _initFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            print('done');
-            print(globals.type);
+            print('done, email found is: ' + globals.email);
 
+            // TEMP
             return Login();
 
-            globals.type = 'shop'; // TEMP
+            if (globals.email == '') {
+              return Login();
+            }
+
+            // globals.type = 'shop'; // TEMP
 
             if (globals.type == 'undefined') {
               return ChooseType();

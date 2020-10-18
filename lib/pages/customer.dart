@@ -85,7 +85,7 @@ class CustomerState extends State<Customer> {
 
             Column(
           children: [
-            Text('Please select the shop: '),
+            Text('Nearby Shops: '),
             new Expanded(child: _locations()),
             Text('Your last rewards:'),
             new Expanded(child: _locations())

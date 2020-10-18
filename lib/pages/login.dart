@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:social_login_2/social_login.dart';
 import 'package:sasomtam/widgets/globals.dart' as globals;
+import 'package:sasomtam/widgets/settings.dart';
 import 'package:sasomtam/pages/chooseType.dart';
 import 'package:get/get.dart';
 import 'package:sasomtam/pages/customer.dart';
 import 'package:sasomtam/pages/shop.dart';
+import 'package:sasomtam/main.dart';
 
 void main() => runApp(new Login());
 
@@ -17,9 +19,10 @@ class _LoginState extends State<Login> {
   final SocialLogin socialLogin = SocialLogin();
 
   static const FACEBOOK_APP_ID = "2160144514116219";
+
   static const GOOGLE_WEB_CLIENT_ID =
       "627136369042-aeq5b2vdpkncgvmfbvb66mqevstui7qq.apps.googleusercontent.com";
-  static const TWITTER_CONSUMER_KEY = "LfNAorWdEOHjjz3ugRd3v3Fyu";
+
   static const TWITTER_CONSUMER_SECRET =
       "fomJMRxC1XzqLYTaFLqEcknLqfuJBG6naIS1BL3Umma4t4I6et";
 
@@ -41,24 +44,34 @@ class _LoginState extends State<Login> {
     socialLogin.getCurrentFacebookUser().then((user) {
       setState(() {
         _facebookUser = user;
-        globals.email = user?.email ?? "";
-        print('Email is: ' + globals.email);
+
+        if (user?.email != '') {
+          globals.email = user?.email ?? "";
+          print('Email is: ' + globals.email);
+          chooseRoute();
+        }
       });
     });
 
     socialLogin.getCurrentGoogleUser().then((user) {
       setState(() {
         _googleUser = user;
-        globals.email = user?.email ?? "";
-        print('Email is: ' + globals.email);
+        if (user?.email != '') {
+          globals.email = user?.email ?? "";
+          print('Email is: ' + globals.email);
+          chooseRoute();
+        }
       });
     });
 
     socialLogin.getCurrentTwitterUser().then((user) {
       setState(() {
         _twitterUser = user;
-        globals.email = _twitterUser.email;
-        print('Email is: ' + globals.email);
+        if (user?.email != '') {
+          globals.email = user?.email ?? "";
+          print('Email is: ' + globals.email);
+          chooseRoute();
+        }
       });
     });
   }
@@ -121,6 +134,13 @@ class _LoginState extends State<Login> {
   }
 
   void chooseRoute() {
+    Settings settings = new Settings();
+    settings.saveString('email', globals.email);
+
+    return;
+
+    Get.off(HomePage());
+
     if (globals.type == 'undefined') {
       Get.off(ChooseType());
     } else if (globals.type == 'customer') {
