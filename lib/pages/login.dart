@@ -23,6 +23,7 @@ class _LoginState extends State<Login> {
   static const GOOGLE_WEB_CLIENT_ID =
       "627136369042-aeq5b2vdpkncgvmfbvb66mqevstui7qq.apps.googleusercontent.com";
 
+  static const TWITTER_CONSUMER_KEY = '';
   static const TWITTER_CONSUMER_SECRET =
       "fomJMRxC1XzqLYTaFLqEcknLqfuJBG6naIS1BL3Umma4t4I6et";
 
@@ -137,9 +138,9 @@ class _LoginState extends State<Login> {
     Settings settings = new Settings();
     settings.saveString('email', globals.email);
 
-    return;
-
     Get.off(HomePage());
+
+    return;
 
     if (globals.type == 'undefined') {
       Get.off(ChooseType());

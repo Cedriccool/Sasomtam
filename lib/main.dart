@@ -48,9 +48,9 @@ class InitializationApp extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             print('done, email found is: ' + globals.email);
-
+            print('And TYPEis: ' + globals.type);
             // TEMP
-            return Login();
+            // return Login();
 
             if (globals.email == '') {
               return Login();

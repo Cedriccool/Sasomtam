@@ -3,7 +3,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-
+import 'dart:math';
 import 'package:sasomtam/widgets/globals.dart' as globals;
 
 void main() => runApp(Customer());
@@ -16,6 +16,8 @@ class Customer extends StatefulWidget {
 class CustomerState extends State<Customer> {
   List locations;
   final oneSec = const Duration(seconds: 9);
+
+  Random random = new Random();
 
   Future<String> getData() async {
     String url = 'http://167.114.254.81/users.json';
@@ -46,6 +48,45 @@ class CustomerState extends State<Customer> {
       print('hi 2!');
       this.getData();
     });
+  }
+
+  _grid() {
+    return GridView.builder(
+        itemCount: locations == null ? 0 : locations.length,
+        gridDelegate: new SliverGridDelegateWithFixedCrossAxisCount(
+          crossAxisCount: 2,
+          childAspectRatio: 2.4,
+          crossAxisSpacing: 0,
+          mainAxisSpacing: 0,
+        ),
+        itemBuilder: (BuildContext context, int index) {
+          return new Column(
+            children: [
+              Card(
+                color: Colors.white,
+                elevation: 2,
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  children: <Widget>[
+                    ListTile(
+                        // leading: Icon(Icons.album, size: 10),
+                        title: Text(
+                          locations[index]["name"],
+                          style: TextStyle(fontSize: 14),
+                        ),
+                        subtitle: Text(
+                          random.nextInt(900).toString() +
+                              ' m', //locations[index]["username"] + ', 250m',
+                          style:
+                              TextStyle(fontSize: 12, color: Colors.pinkAccent),
+                        ),
+                        onTap: () {/* react to the tile being tapped */}),
+                  ],
+                ),
+              ),
+            ],
+          );
+        });
   }
 
   _locations() {
@@ -86,7 +127,7 @@ class CustomerState extends State<Customer> {
             Column(
           children: [
             Text('Nearby Shops: '),
-            new Expanded(child: _locations()),
+            new Expanded(child: _grid()),
             Text('Your last rewards:'),
             new Expanded(child: _locations())
           ],

@@ -4,6 +4,8 @@ import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter_markdown/flutter_markdown.dart';
 import 'package:sasomtam/widgets/settings.dart';
 import 'package:get/get.dart';
+import 'package:sasomtam/pages/customer.dart';
+import 'package:sasomtam/pages/shop.dart';
 import 'package:sasomtam/main.dart';
 
 void main() => runApp(ChooseType());
@@ -61,7 +63,7 @@ If you want to contact us, please use this email: **shanuy.iot@gmail.com**
                     splashColor: Colors.black,
                     onPressed: () {
                       settings.saveString('type', 'customer');
-                      Get.off(HomePage());
+                      Get.off(Customer());
                     },
                     child: Text(
                       " I'm a customer ",
@@ -82,7 +84,7 @@ If you want to contact us, please use this email: **shanuy.iot@gmail.com**
                     splashColor: Colors.black,
                     onPressed: () {
                       settings.saveString('type', 'shop');
-                      Get.off(HomePage());
+                      Get.off(Shop());
                     },
                     child: Text(
                       " I'm a shop owner ",

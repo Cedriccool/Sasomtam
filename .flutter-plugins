@@ -1,13 +1,13 @@
 # This is a generated file; do not edit or check into version control.
-file_chooser=F:\\SDK\\flutter\\.pub-cache\\git\\flutter-desktop-embedding-8ea9f1ce79f04e44bd6392f4155a014b0a7eb6e8\\plugins\\file_chooser\\
-window_size=F:\\SDK\\flutter\\.pub-cache\\git\\flutter-desktop-embedding-8ea9f1ce79f04e44bd6392f4155a014b0a7eb6e8\\plugins\\window_size\\
-geolocator=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\geolocator-6.0.0+4\\
-hexcolor=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\hexcolor-1.0.6\\
-path_provider_linux=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
-path_provider_windows=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.4+1\\
-shared_preferences=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.12+2\\
-shared_preferences_linux=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-0.0.2+2\\
-shared_preferences_macos=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+10\\
-shared_preferences_web=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
-shared_preferences_windows=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_windows-0.0.1+1\\
-social_login_2=F:\\SDK\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\social_login_2-0.0.3\\
+file_chooser=F:\\Flutter\\flutter\\.pub-cache\\git\\flutter-desktop-embedding-8ea9f1ce79f04e44bd6392f4155a014b0a7eb6e8\\plugins\\file_chooser\\
+geolocator=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\geolocator-6.0.0+4\\
+hexcolor=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\hexcolor-1.0.4\\
+path_provider_linux=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_linux-0.0.1+2\\
+path_provider_windows=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\path_provider_windows-0.0.4+1\\
+shared_preferences=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.12\\
+shared_preferences_linux=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_linux-0.0.2+2\\
+shared_preferences_macos=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_macos-0.0.1+10\\
+shared_preferences_web=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_web-0.1.2+7\\
+shared_preferences_windows=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences_windows-0.0.1+1\\
+social_login_2=F:\\Flutter\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\social_login_2-0.0.3\\
+window_size=F:\\Flutter\\flutter\\.pub-cache\\git\\flutter-desktop-embedding-8ea9f1ce79f04e44bd6392f4155a014b0a7eb6e8\\plugins\\window_size\\
